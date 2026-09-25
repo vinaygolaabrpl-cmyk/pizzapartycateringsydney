@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { Clock, Mail, MapPin, Phone, Check } from 'lucide-react'
 import { CONTACT } from '@/lib/site'
 import { Eyebrow } from '@/components/section-heading'
+import { assetPath } from '@/lib/asset-path'
 
 export function Contact() {
   const [submitted, setSubmitted] = useState(false)
@@ -17,7 +18,7 @@ export function Contact() {
   return (
     <section id="contact" className="relative overflow-hidden bg-gold/40 py-24 lg:py-32">
       <Image
-        src="/images/contact.png"
+        src={assetPath('/images/contact.png')}
         alt=""
         fill
         aria-hidden

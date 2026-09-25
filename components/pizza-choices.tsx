@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Reveal } from '@/components/reveal'
 import { Eyebrow } from '@/components/section-heading'
+import { assetPath } from '@/lib/asset-path'
 
 export function PizzaChoices() {
   return (
@@ -48,7 +49,7 @@ export function PizzaChoices() {
           <div className="grid grid-cols-2 gap-4">
             <div className="relative col-span-2 aspect-16/10 overflow-hidden rounded-lg">
               <Image
-                src="/images/pizza-feature.png"
+                src={assetPath('/images/pizza-feature.png')}
                 alt="Fresh wood fired Italian pizza with quality toppings"
                 fill
                 className="object-cover"
@@ -57,7 +58,7 @@ export function PizzaChoices() {
             </div>
             <div className="relative aspect-square overflow-hidden rounded-lg">
               <Image
-                src="/images/gallery-2.png"
+                src={assetPath('/images/gallery-2.png')}
                 alt="Wood fired oven with flames"
                 fill
                 className="object-cover"
@@ -65,7 +66,7 @@ export function PizzaChoices() {
             </div>
             <div className="relative aspect-square overflow-hidden rounded-lg">
               <Image
-                src="/images/gallery-4.png"
+                src={assetPath('/images/gallery-4.png')}
                 alt="Pizza being served to guests"
                 fill
                 className="object-cover"

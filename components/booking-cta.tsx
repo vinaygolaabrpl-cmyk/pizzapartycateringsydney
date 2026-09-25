@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import { Phone } from 'lucide-react'
 import { CONTACT } from '@/lib/site'
+import { assetPath } from '@/lib/asset-path'
 
 export function BookingCta() {
   return (
     <section className="relative overflow-hidden">
       <Image
-        src="/images/booking-bg.png"
+        src={assetPath('/images/booking-bg.png')}
         alt="Wood fired pizza event in the evening"
         fill
         className="object-cover"

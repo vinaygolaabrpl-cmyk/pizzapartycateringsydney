@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Playfair_Display, Inter } from 'next/font/google'
 import './globals.css'
+import { assetPath } from '@/lib/asset-path'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -21,8 +22,8 @@ export const metadata: Metadata = {
     'Professional mobile wood fired pizza catering in Sydney. Authentic Italian pizzas prepared and cooked onsite for birthdays, weddings, corporate events and private functions across Sydney.',
   generator: 'v0.app',
   icons: {
-    icon: '/images/logo.webp',
-    apple: '/images/logo.webp',
+    icon: assetPath('/images/logo.webp'),
+    apple: assetPath('/images/logo.webp'),
   },
 }
 

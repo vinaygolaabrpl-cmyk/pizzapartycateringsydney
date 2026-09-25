@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import { Phone } from 'lucide-react'
 import { CONTACT } from '@/lib/site'
+import { assetPath } from '@/lib/asset-path'
 
 export function Hero() {
   return (
     <section id="home" className="relative flex min-h-screen items-center overflow-hidden">
       <Image
-        src="/images/hero.png"
+        src={assetPath('/images/hero.png')}
         alt="Fresh wood fired pizza prepared onsite at a Sydney event"
         fill
         priority

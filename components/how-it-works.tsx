@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
+import { assetPath } from '@/lib/asset-path'
 
 const STEPS = [
   {
@@ -24,7 +25,7 @@ export function HowItWorks() {
   return (
     <section className="relative overflow-hidden bg-gold py-24 lg:py-32">
       <Image
-        src="/images/pizzaiolo.png"
+        src={assetPath('/images/pizzaiolo.png')}
         alt=""
         fill
         className="object-cover opacity-10"

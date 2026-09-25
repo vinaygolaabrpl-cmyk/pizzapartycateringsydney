@@ -2,24 +2,25 @@ import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
+import { assetPath } from '@/lib/asset-path'
 
 const POSTS = [
   {
-    image: '/images/blog-1.png',
+    image: assetPath('/images/blog-1.png'),
     tag: 'Party Tips',
     title: 'How to Plan the Perfect Pizza Party in Sydney',
     excerpt:
       'From guest numbers to menu selection, here’s everything you need to know to host a memorable wood-fired pizza party at your next celebration.',
   },
   {
-    image: '/images/blog-2.png',
+    image: assetPath('/images/blog-2.png'),
     tag: 'Weddings',
     title: 'Why Wood Fired Pizza Is the Ultimate Wedding Catering Choice',
     excerpt:
       'Interactive, delicious and unforgettable — discover why more Sydney couples are choosing wood fired pizza catering for their big day.',
   },
   {
-    image: '/images/blog-3.png',
+    image: assetPath('/images/blog-3.png'),
     tag: 'Corporate',
     title: 'Corporate Pizza Catering: Impress Your Team & Clients',
     excerpt:

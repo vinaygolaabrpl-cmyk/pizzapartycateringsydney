@@ -4,14 +4,15 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { X } from 'lucide-react'
 import { SectionHeading } from '@/components/section-heading'
+import { assetPath } from '@/lib/asset-path'
 
 const IMAGES = [
-  { src: '/images/gallery-1.png', alt: 'Wood fired pizza fresh from the oven' },
-  { src: '/images/gallery-2.png', alt: 'Traditional wood fired oven with flames' },
-  { src: '/images/gallery-3.png', alt: 'Pizza catering setup at a Sydney event' },
-  { src: '/images/gallery-4.png', alt: 'Guests being served fresh pizza' },
-  { src: '/images/gallery-5.png', alt: 'Pizzaiolo preparing dough' },
-  { src: '/images/gallery-6.png', alt: 'Assortment of Italian pizzas' },
+  { src: assetPath('/images/gallery-1.png'), alt: 'Wood fired pizza fresh from the oven' },
+  { src: assetPath('/images/gallery-2.png'), alt: 'Traditional wood fired oven with flames' },
+  { src: assetPath('/images/gallery-3.png'), alt: 'Pizza catering setup at a Sydney event' },
+  { src: assetPath('/images/gallery-4.png'), alt: 'Guests being served fresh pizza' },
+  { src: assetPath('/images/gallery-5.png'), alt: 'Pizzaiolo preparing dough' },
+  { src: assetPath('/images/gallery-6.png'), alt: 'Assortment of Italian pizzas' },
 ]
 
 export function Gallery() {

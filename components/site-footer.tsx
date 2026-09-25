@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Mail, MapPin, Phone } from 'lucide-react'
 import { CONTACT, NAV_LINKS } from '@/lib/site'
+import { assetPath } from '@/lib/asset-path'
 
 export function SiteFooter() {
   return (
@@ -10,7 +11,7 @@ export function SiteFooter() {
           <div>
             <div className="flex items-center gap-3">
               <Image
-                src="/images/logo.webp"
+                src={assetPath('/images/logo.webp')}
                 alt="Pizza Party Catering Sydney logo"
                 width={52}
                 height={52}

@@ -2,20 +2,21 @@ import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
+import { assetPath } from '@/lib/asset-path'
 
 const SERVICES = [
   {
-    image: '/images/service-birthday.png',
+    image: assetPath('/images/service-birthday.png'),
     title: 'Birthday Party Pizza Catering',
     text: 'Make birthdays unforgettable with our fun and family-friendly birthday pizza catering Sydney service. Fresh pizzas, Nutella desserts, and kid-approved favourites — perfect for all ages.',
   },
   {
-    image: '/images/service-wedding.png',
+    image: assetPath('/images/service-wedding.png'),
     title: 'Wedding Pizza Catering',
     text: 'Add a unique touch to your big day with wedding pizza catering Sydney. Guests love our wood fired pizzas, interactive cooking, and all-you-can-eat packages that keep the celebration alive.',
   },
   {
-    image: '/images/service-corporate.png',
+    image: assetPath('/images/service-corporate.png'),
     title: 'Corporate Pizza Catering',
     text: 'From office lunches to large corporate events, our corporate pizza catering Sydney packages are designed to impress. Hassle-free, professional, and delicious — perfect for teams and clients.',
   },

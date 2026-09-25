@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { Menu, Phone, X } from 'lucide-react'
 import { CONTACT, NAV_LINKS } from '@/lib/site'
+import { assetPath } from '@/lib/asset-path'
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false)
@@ -34,7 +35,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-6 px-5 lg:px-8">
         <a href="#home" className="flex items-center gap-3" aria-label="Pizza Party Catering Sydney home">
           <Image
-            src="/images/logo.webp"
+            src={assetPath('/images/logo.webp')}
             alt="Pizza Party Catering Sydney logo"
             width={52}
             height={52}

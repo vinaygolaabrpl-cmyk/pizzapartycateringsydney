@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Eyebrow } from '@/components/section-heading'
 import { Reveal } from '@/components/reveal'
+import { assetPath } from '@/lib/asset-path'
 
 export function About() {
   return (
@@ -9,7 +10,7 @@ export function About() {
         <Reveal>
           <div className="relative aspect-square overflow-hidden rounded-lg">
             <Image
-              src="/images/pizzaiolo.png"
+              src={assetPath('/images/pizzaiolo.png')}
               alt="Experienced pizzaiolo cooking wood fired pizza at a Sydney event"
               fill
               className="object-cover"

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Check, Star } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
 import { Eyebrow } from '@/components/section-heading'
+import { assetPath } from '@/lib/asset-path'
 
 const POINTS = [
   'Family recipe pizza made live with fresh, quality ingredients',
@@ -18,7 +19,7 @@ export function WhyChoose() {
         <Reveal className="relative">
           <div className="relative aspect-4/5 overflow-hidden rounded-lg">
             <Image
-              src="/images/about.png"
+              src={assetPath('/images/about.png')}
               alt="Wood fired pizza being prepared at a Sydney catering event"
               fill
               className="object-cover"
